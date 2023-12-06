@@ -19,5 +19,5 @@ db.once('open', () => console.log('Connected to Database'))
 const usersRouter = require('./routes/usersrt.js')
 app.use('/users' , usersRouter);
 
-app.listen(3000, () => console.log('Server Started on port 3000'))
+app.listen(8000, () => console.log('Server Started on port 3000'))
 
