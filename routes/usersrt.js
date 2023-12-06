@@ -8,7 +8,7 @@ const app = express();
 
 const puerto = process.env.PORT || 3000;
 
-mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.DATABASE_URL);
 
 // Getting all
 router.get('/', async (req, res) => {
