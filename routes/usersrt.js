@@ -87,7 +87,21 @@ router.patch('/:id', getUsers, async (req, res) => {
     if (req.body.nombre != null) {
         res.user.nombre = req.body.nombre;
     }
-    // Repite para otras propiedades...
+    if (req.body.edad != null) {
+        res.user.edad = req.body.edad;
+    }
+    if (req.body.ciudad != null) {
+        res.user.ciudad = req.body.ciudad;
+    }
+    if (req.body.intereses != null) {
+        res.user.intereses = req.body.intereses;
+    }
+    if (req.body.trabajo != null) {
+        res.user.trabajo = req.body.trabajo;
+    }
+    if (req.body.foto64 != null) {
+        res.user.foto64 = req.body.foto64;
+    }
 
     try {
         // Guarda el usuario actualizado en la base de datos
